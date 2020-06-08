@@ -9,7 +9,6 @@ public class ContextSensitiveGrammar extends Grammar{
 
     public ContextSensitiveGrammar(LBA lba){
         convertFromLBA(lba);
-
         LinkedHashSet<GrammarElement> generatingElements = getGeneratingElements();
         LinkedHashSet<GrammarElement> reachableNonTerminals = getReachableNonTerminals();
         LinkedHashSet<Rule> correctedRules = new LinkedHashSet<Rule>();
